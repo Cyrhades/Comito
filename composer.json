@@ -1,4 +1,6 @@
 {
+    "name": "Cyrhades/ComitoV2.0",
+    "description": "Micro Framework partagé pour projet Hotel",
     "autoload" : {
         "psr-4" : {
             "Comito\\" : "src/"     
