@@ -13,7 +13,7 @@ class MongoDB extends GenericSingleton implements IDatabase
     // que nous ne pourrons pas instancier cette classe depuis l'extérieur
     protected function __construct() 
     {
-        $config = include dirname(__DIR__, 2).'/config.php';
+        $config = include ROOT_DIR.'/app/config.php';
         $client = new Client($config['mongodb']['host']);
         $this->db = $client->selectDatabase($config['mongodb']['dbname']);
     }

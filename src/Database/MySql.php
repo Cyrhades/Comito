@@ -12,7 +12,7 @@ class MySql extends GenericSingleton implements IDatabase
     // que nous ne pourrons pas instancier cette classe depuis l'extérieur
     protected function __construct() 
     {
-        $config = include dirname(__DIR__, 2).'/config.php';
+        $config = include ROOT_DIR.'/app/config.php';
         $this->db = new PDO(
             $config['mysql']['dsn'], 
             $config['mysql']['username'], 
