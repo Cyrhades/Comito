@@ -1,13 +1,30 @@
 {
-    "name": "Cyrhades/ComitoV2.0",
-    "description": "Micro Framework partagé pour projet Hotel",
+    "name": "cyrhades/comito_v2.0",
+    "description": "Micro Framework, partage pour projet Hotel, formation Master (semaine 2)",
+    "type": "library",
+    "keywords": [
+        "micro-framework",
+        "Master",
+        "formation",
+        "apprentissage"
+    ],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Cyril LECOMTE",
+            "email": "cyrhades76@gmail.com",
+            "role": "lead"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.2 || ^7.3 || ^7.4",
+        "nikic/fast-route": "^1.3",
+        "twig/twig": "^3.0"
+    },
     "autoload" : {
         "psr-4" : {
             "Comito\\" : "src/"     
         }
-    },
-    "require": {
-        "nikic/fast-route": "^1.3",
-        "twig/twig": "^3.0"
     }
 }
