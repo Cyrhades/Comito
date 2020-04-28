@@ -11,7 +11,7 @@ class Kernel
     public function __construct()
     {
         if(!defined('ROOT_DIR')) {
-            define("ROOT_DIR",  dirname(__DIR__, 3) );
+            define("ROOT_DIR",  dirname(__DIR__, 4) );
         }
         $this->router = new Router();
     }
