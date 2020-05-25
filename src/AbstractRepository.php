@@ -3,7 +3,7 @@
 namespace Comito;
 
 use Comito\Database\MongoDB;
-use Comito\Database\ConnectMySql;
+use Comito\Database\MySql;
 use Comito\Database\Redis;
 
 abstract class AbstractRepository
@@ -15,7 +15,7 @@ abstract class AbstractRepository
         switch($typeDB) {
             case 'sql' :
             case 'mysql' :
-                $connect = ConnectMySql::getInstance();
+                $connect = MySql::getInstance();
             break;
             case 'mongo' :
             case 'mongodb' :
