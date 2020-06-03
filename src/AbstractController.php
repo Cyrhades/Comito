@@ -29,7 +29,10 @@ abstract class AbstractController
 
     protected function render($view, $vars = [])
     {
-        return $this->templateEngine->render($view.'.html.twig', $vars);
+        return $this->templateEngine->render(
+            $view.'.html.twig', 
+            array_merge($vars, ['current_page' => $_SERVER["PATH_INFO"]])
+        );
     }
 
     protected function redirectToRoute($url)
