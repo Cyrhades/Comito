@@ -31,7 +31,7 @@ abstract class AbstractController
     {
         return $this->templateEngine->render(
             $view.'.html.twig', 
-            array_merge($vars, ['current_page' => $_SERVER["PATH_INFO"]])
+            array_merge($vars, ['current_page' => $_SERVER["PATH_INFO"]??'/'])
         );
     }
 
