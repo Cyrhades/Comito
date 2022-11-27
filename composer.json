@@ -1,5 +1,6 @@
 {
     "name": "cyrhades/comito_v2.0",
+    "version": "2.0",
     "description": "Micro Framework, partage pour projet Hotel, formation Master (semaine 2)",
     "type": "library",
     "keywords": [
