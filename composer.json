@@ -1,13 +1,14 @@
 {
     "name": "cyrhades/comito",
     "version": "2.0",
-    "description": "Micro Framework, partage pour projet Hotel, formation Master (semaine 2)",
+    "description": "Micro Framework, utilisé pour les-ctfs-de-cyrhades",
     "type": "library",
     "keywords": [
         "micro-framework",
         "Master",
         "formation",
-        "apprentissage"
+        "apprentissage",
+        "les-ctfs-de-cyrhades"
     ],
     "license": "Apache-2.0",
     "authors": [
